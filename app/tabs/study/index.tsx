@@ -1,13 +1,14 @@
-import { StyleSheet, TouchableOpacity } from "react-native";
-
-import EditScreenInfo from "@/components/EditScreenInfo";
+import React from "react";
+import { TouchableOpacity } from "react-native";
 import { Text, View } from "@/components/Themed";
-
-export default function TabOneScreen() {
+import { useRouter } from "expo-router";
+const Home = () => {
+  const router = useRouter();
   const handleStartStudy = () => {
-    // Add logic to start studying
+    // Open location settings
+    // startActivityAsync(ActivityAction.ZEN_MODE_SETTINGS);
+    router.push("/tabs/study/StartStudy");
   };
-
   return (
     <View className={`flex-1 items-center justify-center bg-gray-300`}>
       <Text className={`text-3xl text-center text-gray-800 font-bold mb-8`}>
@@ -21,21 +22,6 @@ export default function TabOneScreen() {
       </TouchableOpacity>
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
-  },
-});
+export default Home;

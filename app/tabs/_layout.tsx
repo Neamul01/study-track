@@ -28,7 +28,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="study"
         options={{
           // headerShown: false,
           headerLeftLabelVisible: false,
