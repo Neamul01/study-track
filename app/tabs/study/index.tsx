@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <View className={`flex-1 items-center justify-center bg-gray-300`}>
       <Text className={`text-3xl text-center text-gray-800 font-bold mb-8`}>
-        Welcome to Study App
+        Welcome
       </Text>
       <TouchableOpacity
         className={`bg-blue-500 px-6 py-3 rounded-lg`}
