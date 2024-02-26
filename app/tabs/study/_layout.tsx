@@ -4,9 +4,10 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="StartStudy" options={{ headerShown: false }} />
       <Stack.Screen
-        name="StartStudy"
-        options={{ headerShown: false, title: "Start Study" }}
+        name="TrackStudy"
+        options={{ title: "Study", headerTitleAlign: "center" }}
       />
     </Stack>
   );
