@@ -1,4 +1,3 @@
-import { TouchableOpacity } from "react-native";
 import { Text, View } from "@/components/Themed";
 import { useRouter } from "expo-router";
 import { useEffect } from "react";
